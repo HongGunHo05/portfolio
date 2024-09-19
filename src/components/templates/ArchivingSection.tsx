@@ -28,7 +28,7 @@ const ArchivingSection: ForwardRefRenderFunction<
             css={{
                 justifyContent: 'center',
                 alignItems: 'flex-start',
-                backgroundColor: '#212529',
+                backgroundColor: theme.colors.gray3,
                 padding: '6rem 2rem',
             }}
         >
@@ -78,7 +78,7 @@ const ArchivingSection: ForwardRefRenderFunction<
                         <motion.div
                             whileHover={{scale: 1.1}}
                             whileTap={{scale: 0.9}}
-                            onClick={() => window.open('https://github.com/lucas0530')}
+                            onClick={() => window.open('https://github.com/HongGunHo05')}
                             css={{
                                 backgroundColor: '#f5f5f5',
                                 padding: '2rem',
@@ -107,9 +107,9 @@ const ArchivingSection: ForwardRefRenderFunction<
                                     css={{
                                         whiteSpace: 'nowrap',
                                     }}
-                                    href="https://github.com/lucas0530"
+                                    href="https://github.com/HongGunHo05"
                                 >
-                                    github.com/lucas0530
+                                    github.com/HongGunHo05
                                 </a>
                             </div>
 
@@ -132,83 +132,7 @@ const ArchivingSection: ForwardRefRenderFunction<
                                 }}
                             >
                                 <li>
-                                    <Text>과거 프로젝트, 프로그램, 앱의 소스 코드</Text>
-                                </li>
-                                <li>
-                                    <Text>멘토링 중인 Organizations의 소스 코드</Text>
-                                </li>
-                                <li>
-                                    <Text>라이브러리 활동 내역 등</Text>
-                                </li>
-                            </ul>
-                        </motion.div>
-
-                        <motion.div
-                            whileHover={{scale: 1.1}}
-                            whileTap={{scale: 0.9}}
-                            onClick={() => window.open('https://velog.io/@lucas')}
-                            css={{
-                                backgroundColor: '#f5f5f5',
-                                padding: '2rem',
-                                borderRadius: '1rem',
-                                flex: 1,
-                                display: 'flex',
-                                flexDirection: 'column',
-                                cursor: 'pointer',
-                            }}
-                        >
-                            <div
-                                css={{
-                                    marginTop: '-1.5rem',
-                                    marginBottom: '-2.5rem',
-                                    marginLeft: '-3.5rem',
-                                    width: '14rem',
-                                }}
-                            >
-                                <Image src={IconVelog}/>
-                            </div>
-                            <div
-                                css={{
-                                    marginTop: '1rem',
-                                    marginBottom: '1rem',
-                                }}
-                            >
-                                <a
-                                    css={{
-                                        whiteSpace: 'nowrap',
-                                    }}
-                                    href="https://velog.io/@lucas"
-                                >
-                                    velog.io/@lucas
-                                </a>
-                            </div>
-
-                            <div>
-                                <Text
-                                    css={{
-                                        fontWeight: 'bold',
-                                    }}
-                                >
-                                    스터디 및 지식 공유 목적의 블로그
-                                </Text>
-                                <Text>입니다.</Text>
-                            </div>
-                            <ul
-                                css={{
-                                    paddingLeft: '1rem',
-                                    li: {
-                                        marginBottom: '0.5rem',
-                                    },
-                                }}
-                            >
-                                <li>
-                                    <Text>공부한 내용을 머리로 정리하기 위해 작성한 기록</Text>
-                                </li>
-                                <li>
-                                    <Text>한층 더 성장한 개발자가 되기 위한 몸부림</Text>
-                                </li>
-                                <li>
-                                    <Text>알고 있는 지식을 공유하고 피드백을 받기 위한 자리</Text>
+                                    <Text>과거 프로젝트 및 각종 소스 코드</Text>
                                 </li>
                             </ul>
                         </motion.div>

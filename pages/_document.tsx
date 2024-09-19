@@ -1,16 +1,16 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import {Html, Head, Main, NextScript} from 'next/document'
 
 export default function Document() {
-  return (
-    <Html>
-      <Head>
-        <title>{`최근원's 포트폴리오`}</title>
-      </Head>
+    return (
+        <Html>
+            <Head>
+                <title>{`Geonho Portfolio`}</title>
+            </Head>
 
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  )
+            <body>
+                <Main/>
+                <NextScript/>
+            </body>
+        </Html>
+    )
 }

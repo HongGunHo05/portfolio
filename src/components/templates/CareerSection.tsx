@@ -2,12 +2,7 @@ import Center from '@components/atoms/Center'
 import Text from '@components/atoms/Text'
 import {Section} from './IntroSection.style'
 import {motion} from 'framer-motion'
-import {useTheme} from '@emotion/react'
-import IconPlayauto from '@public/static/logo/skills/playauto.png'
-import IconRidi from '@public/static/logo/skills/ridi.png'
-import IconToss from '@public/static/logo/skills/toss.png'
 
-import IconAha from '@public/static/logo/skills/aha.png'
 import Image from 'next/image'
 import Divider from '@components/atoms/Divider'
 import {forwardRef, ForwardRefRenderFunction, ReactElement} from 'react'
@@ -52,7 +47,7 @@ const CareerList: CareerItemType[] = [
                             width: '10rem',
                         }}
                     >
-                        <Image src={IconAha}/>
+                        {/*<Image src={IconAha}/>*/}
                     </div>
                 </div>
             ),

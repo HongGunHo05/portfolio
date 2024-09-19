@@ -1,19 +1,20 @@
-import { useEffect, useState } from 'react'
-import { createPortal } from 'react-dom'
+import {useEffect, useState} from 'react'
+import {createPortal} from 'react-dom'
+
 type PortalProps = React.PropsWithChildren<{}>
 
-const Portal = ({ children }: PortalProps) => {
-  const [element, setElement] = useState<HTMLElement | null>(null)
+const Portal = ({children}: PortalProps) => {
+    const [element, setElement] = useState<HTMLElement | null>(null)
 
-  useEffect(() => {
-    setElement(document.getElementById('portal'))
-  }, [])
+    useEffect(() => {
+        setElement(document.getElementById('portal'))
+    }, [])
 
-  if (!element) {
-    return <></>
-  }
+    if (!element) {
+        return <></>
+    }
 
-  return createPortal(children, element)
+    return createPortal(children, element)
 }
 
 export default Portal
