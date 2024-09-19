@@ -1,0 +1,36 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  color: #258ddb
+}
+span {
+  font-family: AppleSDGothic;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+.swiper-slide {
+  width: 100% !important;
+}
+
+:root {
+  --swiper-navigation-size: 28px !important
+}

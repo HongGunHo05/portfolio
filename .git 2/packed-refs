@@ -1,0 +1,23 @@
+# pack-refs with: peeled fully-peeled sorted 
+5756d6eccd607e3aac5ceaff58baa2816ce3f4a6 refs/remotes/origin/build-githubAction
+6dfb12b8e21a1c2792cf66c8e849de92d3b55b3a refs/remotes/origin/build-settings
+470c9c811ad8ebfddcf7a99383cc23bdfbb2a98c refs/remotes/origin/chore-add-portfolio
+beee54c19eb34a3d56a962546aac15357a501974 refs/remotes/origin/chore-description
+e3fbbe1cf46aadc0a21999957479ca423e8f5566 refs/remotes/origin/chore-project-bm
+1d5051a050410832787913d72c4149753e20acda refs/remotes/origin/chore-temp
+f913e658eb4890157ab60d47f4ae65fe7a176919 refs/remotes/origin/chore-text-highlight-project-dame-meme
+dec2f0e89903ceb63451867dc17b4ad6bc3b22d2 refs/remotes/origin/develop
+3959158d88160ca7515087cb68bf13ea6deead10 refs/remotes/origin/edit-readme
+f529a40b02d3b959b5f09f58148b7e09d5dc0320 refs/remotes/origin/feature-AboutMeSection
+ef8ec35ae7d3208e2b72d8882e18a43a5f50356c refs/remotes/origin/feature-ArchivingSection
+76e3ed5439838ab1fb484ade4d61b77e5d1eee8b refs/remotes/origin/feature-IntroSection
+4a9f243b9d869adb930f2243275c8d7827f275be refs/remotes/origin/feature-MySkillSection
+364a95c8cd22d388be5f076db6b05ba091ce1442 refs/remotes/origin/feature-careerSection
+3137a9a25ce378e1925a1c4d05d283909f14be01 refs/remotes/origin/feature-header
+a1e48991068f24468ae42fc00f7107efb8713acc refs/remotes/origin/feature-projectSection
+83008eef051b725a749a67d6de27bd952e96bfad refs/remotes/origin/fix-IntroSection-ScrollSectionIndex
+740e13b6bc443f4e7bd444a4c8ff779bd1f80df8 refs/remotes/origin/fix-swiper-css-override
+30ce104948121e34629c295dfdae1b93861b97bd refs/remotes/origin/main
+6e5006a95717fcd3abb697cd6af35bd38cb755cd refs/remotes/origin/revert-25-fix-swiper-css-override
+550b0714a293ac6c38010cb108fb6e7c23ef1321 refs/remotes/origin/revert-36-chore-temp
+30ce104948121e34629c295dfdae1b93861b97bd refs/tags/1.0.0
