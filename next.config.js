@@ -10,7 +10,7 @@ const nextConfig = {
     path: '/',
   },
   output: 'export',
-  assetPrefix: isProd ? './' : '',
+  assetPrefix: isProd ? '/portfolio/' : '',
   basePath: isProd ? '/portfolio' : '', // production 환경에서만 basePath 적용
 }
 
