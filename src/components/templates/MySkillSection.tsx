@@ -17,6 +17,7 @@ import IconFigma from '@public/static/logo/skills/figma.png'
 import IconGit from '@public/static/logo/skills/git.jpg'
 import IconJava from '@public/static/logo/skills/java.png'
 import IconPython from '@public/static/logo/skills/python.jpg'
+import IconNotion from '@public/static/logo/skills/notion.png'
 
 import {Interpolation} from '@emotion/styled'
 import {CSSObject, Theme, useTheme} from '@emotion/react'
@@ -230,7 +231,7 @@ const BackendSection = () => {
                     <SkillItem
                         src={IconJava}
                         imageContainerStyle={{
-                            width: '8rem',
+                            width: '5rem',
                         }}
                         containerStyle={{
                             width: '100%',
@@ -239,7 +240,7 @@ const BackendSection = () => {
                     <SkillItem
                         src={IconPython}
                         imageContainerStyle={{
-                            width: '5rem',
+                            width: '3.5rem',
                         }}
                         containerStyle={{
                             width: '100%',
@@ -323,6 +324,23 @@ const CommunitySection = () => {
                         }}
                     />
                 </article>
+
+                <article
+                    css={{
+                        display: 'flex',
+                        width: '280px',
+                    }}
+                >
+                    <SkillItem
+                        src={IconNotion}
+                        imageContainerStyle={{
+                            width: '9rem',
+                        }}
+                        containerStyle={{
+                            width: '100%',
+                        }}
+                    />
+                </article>
             </div>
         </section>
     )
@@ -346,7 +364,7 @@ const MySkillSection: ForwardRefRenderFunction<
                 padding: '6rem 2rem',
             }}
         >
-            <Center
+        <Center
                 css={{
                     flexDirection: 'column',
                     flex: 1,

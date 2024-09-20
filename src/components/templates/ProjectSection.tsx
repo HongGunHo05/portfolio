@@ -8,13 +8,15 @@ import SectionTitle from '@components/organisms/SectionTitle'
 import {SectionMethodsType} from 'pages'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import Image from 'next/image'
-
 import Divider from '@components/atoms/Divider'
-import androidMarket from '@public/static/logo/market/google-play.svg'
-// import close from '@public/static/icon/object/close.svg'
-import iosMarket from '@public/static/logo/market/apple-store.png'
 import SwiperCore, {Navigation, Pagination, Autoplay} from 'swiper'
-// import Portal from '@components/atoms/Portal'
+
+import ImgEdc1 from "@public/static/images/edc1.png";
+import ImgEdc2 from "@public/static/images/edc2.png";
+import ImgEdc4 from "@public/static/images/edc4.png";
+import ImgEdc5 from "@public/static/images/edc5.png";
+import ImgEdc7 from "@public/static/images/edc7.png";
+
 
 type ProjectSectionProps = {
     sectionMethods: SectionMethodsType
@@ -46,90 +48,44 @@ const SkillTag = ({title}: SkillTagProps) => (
 
 const ProjectList = [
     {
-        title: '아하앱',
-        subTitle: '2021.11 - 2022.07 (사내 개발자 3人)',
-        // imageList: [ProjectAha1, ProjectAha2, ProjectAha3, ProjectAha4],
+        title: 'EDC',
+        subTitle: '2023.10 - 2024.04 (사내 개발자 4人)',
+        imageList: [ImgEdc1, ImgEdc2, ImgEdc4, ImgEdc5, ImgEdc7],
         description: (
             <>
                 <div>
                     <Text>
-                        아하 서비스는{' '}
+                        EDC는{' '}
                         <Text bold>
-                            궁금한 점을 질문하면 검증된 전문가로 부터 답변을 받을 수 있는
-                            보상형 Q&A 서비스
-                        </Text>
-                        입니다. 아하 서비스의 모바일 디바이스 점유율이 전체 중 60 퍼센트로,
-                        비중이 높아{' '}
-                        <Text bold>
-                            모바일 디바이스에 대한 어플리케이션 니즈 해결을 위해 시작하게된
-                            프로젝트
-                        </Text>
-                        입니다. <br/>
-                        <br/>
-                        최대 3명의 개발진으로 이루어진 TF가 만들어져 8개월 동안 여정을
-                        함께했습니다. 이 프로젝트를 통해{' '}
-                        <Text bold>React 라이브러리를 더 깊게 이해할 수 있던 계기</Text>
-                        가 되었습니다.
+                            사용자의 데이터 전송 관리 및 새로운 테이블 생성 도와주어 더 쉽고 편리함을 제공하는 서비스
+                        </Text>입니다.
+
                         <br/>
                         <br/>
+
                         <Text bold>
-                            모바일 기기에서 실행되는 어플리케이션 특성 상, 성능 최적화가 매우
-                            중요하기 때문에, 효율적인 컴포넌트 아키텍쳐 설계 및 최적화 작업이
-                            필수적
+                            1. 사용자의 쉬운 데이터 관리 방식 도입
                         </Text>
-                        이었습니다. 이 과정에서{' '}
-                        <Text bold>
-                            리액트에 대해 좀 더 알아갈 수 있어 흥미로운 프로젝트
-                        </Text>
-                        였습니다.
                         <br/>
-                        <br/>앱 출시 후 <Text bold>양대 마켓 무료 인기앱 2위 달성</Text>
-                        했으며, 현재 대대적인 마케팅을 통한 홍보를 진행 도중에 있습니다.
+                        <Text bold>
+                            2. 유연한 BI 연동 방식 도입
+                        </Text>
+                        <br/>
+                        <Text bold>
+                            3. 데이터 관리를 위한 전송 주기 관리 도입
+                        </Text>
+
+                        <br/><br/><br/>
+
+                        위 세 가지를 도입하여 3개의 대형 병원에 적용한 결과, 기존에 사용하기 어려웠던 BI 시스템을 더욱 간편하게 연결하고 활용할 수 있게 되었습니다.
+                        이를 통해 병원에서는 데이터 분석 및 의사결정 과정을 신속하고 효율적으로 처리할 수 있게 되었습니다.
+                        또한, 데이터 관리와 접근성이 개선되어 데이터를 더욱 쉽게 보고 관리할 수 있게 되었습니다.
                     </Text>
                 </div>
             </>
         ),
 
         subDescription: [
-            {title: '주요 기능', description: <Text>아하 서비스 전 기능</Text>},
-            {
-                title: 'URL',
-                description: (
-                    <div
-                        css={{
-                            display: 'flex',
-                            gap: '0.5rem',
-                        }}
-                    >
-                        <div
-                            css={{
-                                width: 40,
-                                cursor: 'pointer',
-                            }}
-                            onClick={() =>
-                                window.open(
-                                    'https://play.google.com/store/apps/details?id=io.aha.app.aha'
-                                )
-                            }
-                        >
-                            <Image src={androidMarket}/>
-                        </div>
-                        <div
-                            css={{
-                                width: 40,
-                                cursor: 'pointer',
-                            }}
-                            onClick={() =>
-                                window.open(
-                                    'https://apps.apple.com/kr/app/%EC%95%84%ED%95%98-%EA%B6%81%EA%B8%88%ED%95%A0-%EB%95%90-%EC%95%84%ED%95%98/id1615680677'
-                                )
-                            }
-                        >
-                            <Image src={iosMarket}/>
-                        </div>
-                    </div>
-                ),
-            },
             {
                 title: '기술 스택',
                 description: (
@@ -140,17 +96,17 @@ const ProjectList = [
                             flexWrap: 'wrap',
                         }}
                     >
-                        <SkillTag title="React-Native"/>
-                        <SkillTag title="NextJS"/>
-                        <SkillTag title="React-Query"/>
+                        <SkillTag title="React"/>
+                        <SkillTag title="Typescript"/>
                         <SkillTag title="Redux"/>
-                        <SkillTag title="NativeBase"/>
-                        <SkillTag title="Sentry"/>
+                        <SkillTag title="Jira"/>
+                        <SkillTag title="GitLab"/>
+                        <SkillTag title="Wehago(사내 프로그램)"/>
                     </div>
                 ),
             },
         ],
-    },
+    }
 ]
 
 const ProjectSection: ForwardRefRenderFunction<
@@ -263,20 +219,21 @@ const ProjectSection: ForwardRefRenderFunction<
                                         navigation
                                         pagination={{clickable: true}}
                                     >
-                                        {/*{project.imageList.map((image) => (*/}
-                                        {/*    <SwiperSlide key={image.src}>*/}
-                                        {/*        <div*/}
-                                        {/*            css={{*/}
-                                        {/*                display: 'flex',*/}
-                                        {/*                justifyContent: 'center',*/}
-                                        {/*                alignItems: 'center',*/}
-                                        {/*                userSelect: 'none',*/}
-                                        {/*            }}*/}
-                                        {/*        >*/}
-                                        {/*            <Image src={image} alt={image.src}/>*/}
-                                        {/*        </div>*/}
-                                        {/*    </SwiperSlide>*/}
-                                        {/*))}*/}
+                                        {project.imageList.map((image) => (
+                                            <SwiperSlide key={image.src}>
+                                                <div
+                                                    css={{
+                                                        display: 'flex',
+                                                        justifyContent: 'center',
+                                                        alignItems: 'center',
+                                                        userSelect: 'none',
+                                                    }}
+
+                                                >
+                                                    <Image src={image} alt={image.src}/>
+                                                </div>
+                                            </SwiperSlide>
+                                        ))}
                                     </Swiper>
                                 </div>
                                 <div
@@ -333,49 +290,6 @@ const ProjectSection: ForwardRefRenderFunction<
                     </motion.div>
                 ))}
             </Center>
-            {/* <Portal>
-        <Center
-          id="TEST"
-          css={{
-            height: '100%',
-            width: '100%',
-            position: 'fixed',
-            top: 0,
-          }}
-        >
-          <div
-            css={{
-              height: '100%',
-              width: '100%',
-              backgroundColor: 'white',
-              position: 'relative',
-              padding: '3rem',
-            }}
-          >
-            <div
-              css={{
-                position: 'absolute',
-                top: 0,
-                right: 0,
-                padding: '1rem',
-              }}
-            >
-              <Image
-                src={close}
-                width="28px"
-                height="28px"
-                onClick={() => {}}
-                css={{
-                  cursor: 'pointer',
-                }}
-              />
-            </div>
-            <div>
-              <Text>ㅁㄴㅇㅁㄴㅇㄴㅁㅇ</Text>
-            </div>
-          </div>
-        </Center>
-      </Portal> */}
         </Section>
     )
 }
