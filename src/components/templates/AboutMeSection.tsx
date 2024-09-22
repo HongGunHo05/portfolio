@@ -49,9 +49,12 @@ const ShowBox = () => {
                                 gap: '0.5rem',
                                 boxShadow: '1rem 1rem 1rem 0 rgb(68 68 68 / 20%)',
                                 width: '70%',
+                                height: '250px', // 고정된 높이 설정
+                                overflow: 'hidden', // 넘치는 내용은 숨김 처리
                                 '@media (min-width: 800px)': {
-                                    width: '13%',
-                                    padding: '0.5rem 0rem'
+                                    width: '180px',
+                                    padding: '0.5rem 0rem',
+                                    height: '200px', // 큰 화면에서도 고정 높이 유지
                                 },
                             }
                             : {
@@ -63,18 +66,27 @@ const ShowBox = () => {
                                 gap: '0.5rem',
                                 boxShadow: '1rem 1rem 1rem 0 rgb(68 68 68 / 20%)',
                                 width: '70%',
+                                height: '180px', // 고정된 높이 설정
+                                overflow: 'hidden', // 넘치는 내용은 숨김 처리
                                 '@media (min-width: 800px)': {
                                     width: '20%',
+                                    height: '200px', // 큰 화면에서도 고정 높이 유지
                                 },
                             }}
                     >
 
+
                         {
                             title === '사진'
                                 ? <Image src={"/static/images/20230221_031015.jpg"} alt={""}
-                                         width={150}
-                                         height={200}
-                                         // layout="responsive"
+                                         width={120}
+                                         height={150}
+                                         css={{
+                                             width: '100%',
+                                             maxWidth: '150px',
+                                             height: 'auto',
+                                         }}
+                                    // layout="responsive"
                                 />
                                 : <>
                                     <Text
@@ -98,6 +110,8 @@ const ShowBox = () => {
                                                 key={field}
                                                 css={{
                                                     fontSize: '1.25rem',
+                                                    wordBreak: 'break-word',
+                                                    whiteSpace: 'normal',
                                                 }}
                                             >
                                                 {field}
