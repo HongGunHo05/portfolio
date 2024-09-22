@@ -230,7 +230,11 @@ const ProjectSection: ForwardRefRenderFunction<
                                                     }}
 
                                                 >
-                                                    <Image src={image} alt={image.src}/>
+                                                    <Image src={image} alt={image.src}
+                                                           width={150}
+                                                           height={40}
+                                                        layout="responsive"
+                                                    />
                                                 </div>
                                             </SwiperSlide>
                                         ))}

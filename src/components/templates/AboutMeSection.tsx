@@ -6,6 +6,7 @@ import {useTheme} from '@emotion/react'
 import {forwardRef, ForwardRefRenderFunction} from 'react'
 import SectionTitle from '@components/organisms/SectionTitle'
 import {SectionMethodsType} from 'pages'
+import Image from "next/image";
 
 const ABOUT_ME_FIELD = [
     {title: '사진', fields: ['/static/images/20230221_031015.jpg']},
@@ -70,9 +71,11 @@ const ShowBox = () => {
 
                         {
                             title === '사진'
-                                ? <img css={{
-                                    width: "60%",
-                                }} src={"/static/images/20230221_031015.jpg"} alt={""}/>
+                                ? <Image src={"/static/images/20230221_031015.jpg"} alt={""}
+                                         width={150}
+                                         height={200}
+                                         // layout="responsive"
+                                />
                                 : <>
                                     <Text
                                         css={{

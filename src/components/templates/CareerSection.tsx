@@ -48,7 +48,11 @@ const CareerList: CareerItemType[] = [
                             width: '10rem',
                         }}
                     >
-                        <Image src={ImgDouzone}/>
+                        <Image src={ImgDouzone} alt={""}
+                               width={500}
+                               height={300}
+                               layout="responsive"
+                        />
                     </div>
                 </div>
             ),

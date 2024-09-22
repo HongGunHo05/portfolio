@@ -55,7 +55,11 @@ const SkillItem = ({
         }}
     >
         <div css={imageContainerStyle}>
-            <Image src={src}/>
+            <Image src={src} alt={""}
+                   width={150}
+                   height={40}
+                layout="responsive"
+            />
         </div>
     </motion.div>
 )

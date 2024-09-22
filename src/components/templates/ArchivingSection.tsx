@@ -95,7 +95,11 @@ const ArchivingSection: ForwardRefRenderFunction<
                                     marginLeft: '-0.25rem',
                                 }}
                             >
-                                <Image src={IconGithub}/>
+                                <Image src={IconGithub} alt={""}
+                                       width={150}
+                                       height={40}
+                                       // layout="responsive"
+                                />
                             </div>
                             <div
                                 css={{

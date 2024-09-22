@@ -1,17 +1,12 @@
-/** @type {import('next').NextConfig} */
-
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  output: 'export', // 정적 파일로 빌드
   images: {
-    loader: 'akamai',
-    path: '/',
+    unoptimized: true, // 이미지 최적화 비활성화
   },
-  output: 'export',
-  assetPrefix: isProd ? '/portfolio/' : '',
-  basePath: isProd ? '/portfolio' : '', // production 환경에서만 basePath 적용
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
