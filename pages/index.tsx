@@ -68,7 +68,7 @@ const Home: NextPage = () => {
             case 3:
                 return window.scrollTo({
                     top:
-                        CareerSectionRef.current?.offsetTop! -
+                        ProjectSectionRef.current?.offsetTop! -
                         (!isMobile ? HEADER_HEIGHT : 0),
                     behavior: 'smooth',
                 })
@@ -76,7 +76,7 @@ const Home: NextPage = () => {
             case 4:
                 return window.scrollTo({
                     top:
-                        ProjectSectionRef.current?.offsetTop! -
+                        CareerSectionRef.current?.offsetTop! -
                         (!isMobile ? HEADER_HEIGHT : 0),
                     behavior: 'smooth',
                 })
