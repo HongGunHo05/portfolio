@@ -68,7 +68,7 @@ const Home: NextPage = () => {
             case 3:
                 return window.scrollTo({
                     top:
-                        ArchivingSectionRef.current?.offsetTop! -
+                        CareerSectionRef.current?.offsetTop! -
                         (!isMobile ? HEADER_HEIGHT : 0),
                     behavior: 'smooth',
                 })
@@ -76,7 +76,7 @@ const Home: NextPage = () => {
             case 4:
                 return window.scrollTo({
                     top:
-                        CareerSectionRef.current?.offsetTop! -
+                        ProjectSectionRef.current?.offsetTop! -
                         (!isMobile ? HEADER_HEIGHT : 0),
                     behavior: 'smooth',
                 })
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
             case 5:
                 return window.scrollTo({
                     top:
-                        ProjectSectionRef.current?.offsetTop! -
+                        ArchivingSectionRef.current?.offsetTop! -
                         (!isMobile ? HEADER_HEIGHT : 0),
                     behavior: 'smooth',
                 })
@@ -96,9 +96,9 @@ const Home: NextPage = () => {
     const headers = [
         {title: 'About Me', scrollIndex: 1},
         {title: 'Skill', scrollIndex: 2},
-        {title: 'Archiving', scrollIndex: 3},
-        {title: 'Project', scrollIndex: 5},
+        {title: 'Project', scrollIndex: 3},
         {title: 'Career', scrollIndex: 4},
+        {title: 'Archiving', scrollIndex: 5},
     ]
     return (
         <main
@@ -191,12 +191,12 @@ const Home: NextPage = () => {
             <IntroSection ref={IntroSectionRef} sectionMethods={sectionMethods}/>
             <AboutMeSection ref={AboutMeSectionRef} sectionMethods={sectionMethods}/>
             <MySkillSection ref={MySkillSectionRef} sectionMethods={sectionMethods}/>
+            <ProjectSection ref={ProjectSectionRef} sectionMethods={sectionMethods}/>
+            <CareerSection ref={CareerSectionRef} sectionMethods={sectionMethods}/>
             <ArchivingSection
                 ref={ArchivingSectionRef}
                 sectionMethods={sectionMethods}
             />
-            <ProjectSection ref={ProjectSectionRef} sectionMethods={sectionMethods}/>
-            <CareerSection ref={CareerSectionRef} sectionMethods={sectionMethods}/>
         </main>
     )
 }

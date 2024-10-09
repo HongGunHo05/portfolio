@@ -28,7 +28,7 @@ const ArchivingSection: ForwardRefRenderFunction<
             css={{
                 justifyContent: 'center',
                 alignItems: 'flex-start',
-                backgroundColor: theme.colors.gray3,
+                backgroundColor: theme.colors.black,
                 padding: '6rem 2rem',
             }}
         >

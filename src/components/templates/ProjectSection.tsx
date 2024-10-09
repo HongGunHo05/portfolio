@@ -123,7 +123,7 @@ const ProjectSection: ForwardRefRenderFunction<
             css={{
                 justifyContent: 'center',
                 alignItems: 'flex-start',
-                backgroundColor: theme.colors.black,
+                backgroundColor: theme.colors.gray3,
                 padding: '6rem 2rem',
             }}
         >
