@@ -17,6 +17,19 @@ import ImgEdc4 from "@public/static/images/edc4.png";
 import ImgEdc5 from "@public/static/images/edc5.png";
 import ImgEdc7 from "@public/static/images/edc7.png";
 
+import yangpa1 from '@public/static/images/yangpa/y1.png';
+import yangpa2 from '@public/static/images/yangpa/y2.png';
+import yangpa3 from '@public/static/images/yangpa/y3.png';
+import yangpa4 from '@public/static/images/yangpa/y4.png';
+import yangpa5 from '@public/static/images/yangpa/y5.png';
+import yangpa6 from '@public/static/images/yangpa/y6.png';
+import yangpa7 from '@public/static/images/yangpa/y7.png';
+import yangpa8 from '@public/static/images/yangpa/y8.png';
+import yangpa9 from '@public/static/images/yangpa/y9.png';
+import yangpa10 from '@public/static/images/yangpa/y10.png';
+import yangpa11 from '@public/static/images/yangpa/y11.png';
+import yangpa12 from '@public/static/images/yangpa/y12.png';
+
 
 type ProjectSectionProps = {
     sectionMethods: SectionMethodsType
@@ -102,6 +115,83 @@ const ProjectList = [
                         <SkillTag title="Jira"/>
                         <SkillTag title="GitLab"/>
                         <SkillTag title="Wehago(사내 프로그램)"/>
+                    </div>
+                ),
+            },
+        ],
+    },
+    {
+        title: '육아 도움 AI 채팅 서비스 ( Yangpa )',
+        subTitle: '2024.08.31 - 2024.10.13 (풀스택 4, AI 1, 디자인 1)',
+        imageList: [yangpa1, yangpa3, yangpa4, yangpa5, yangpa6, yangpa7,
+            yangpa8, yangpa9, yangpa10, yangpa11, yangpa12],
+        description: (
+            <>
+                <div>
+                    <Text>
+                        Yangpa는{' '}
+                        <Text bold>
+                            부모들이 육아 정보를 더 빠르고 정확하게 얻을 수 있도록 하는 AI 기반 서비스
+                        </Text>입니다.
+
+                        <br/>
+                        <br/>
+
+                        <Text bold>
+                            1. AI 채팅 서비스
+                        </Text> : RAG방식으로 전문가의 자료들을 기반으로 한 채팅 서비스
+                        <br/>
+                        <Text bold>
+                            2. 통합검색 서비스
+                        </Text>: 다양한 형태의 자료 및 글들을 한 눈에 볼 수 있는 서비스
+                        <br/>
+                        <Text bold>
+                            3. 커뮤니티
+                        </Text>: 성별의 제한 없이 자유롭게 의견을 주고 받을 수 있게 도와주는 서비스
+
+                        <br/><br/><br/>
+
+                        위 3가지의 기능을 제공 함으로 아래의 4가지의 문제를 해결 할 수 있습니다.
+                        <br/>
+
+                        <Text bold>
+                            ▪ 온라인 커뮤니티의 불확실한 정보<br/>
+                            ▪ 몇 맘카페의 성별 제한 문제<br/>
+                            ▪ 비전문적인 자료의 검증 필요성<br/>
+                            ▪ 전문가 상담에 최소 1개월 소요<br/>
+                        </Text>
+
+                        <br/>
+
+                        프로젝트의 주요 특징은 AI 가 제공하는 검증된 전문가 자료를 간단한 채팅 형식으로 신속하게 전달하며,
+                        로그인 후 몇 분 내로 필요한 답변을 받을 수 있다는 점입니다
+                    </Text>
+                </div>
+            </>
+        ),
+
+        subDescription: [
+            {
+                title: '기술 스택',
+                description: (
+                    <div
+                        css={{
+                            display: 'flex',
+                            gap: '0.25rem',
+                            flexWrap: 'wrap',
+                        }}
+                    >
+                        <SkillTag title="Spring boot"/>
+                        <SkillTag title="FastAPI"/>
+                        <SkillTag title="React"/>
+                        <SkillTag title="Typescript"/>
+                        <SkillTag title="Redux"/>
+                        <SkillTag title="OpenAI ChatGPT"/>
+                        <SkillTag title="OpenAI Whisper"/>
+                        <SkillTag title="Upstage Solar"/>
+                        <SkillTag title="PostgreSQL"/>
+                        <SkillTag title="OpenSearch"/>
+                        <SkillTag title="Git"/>
                     </div>
                 ),
             },
@@ -233,7 +323,7 @@ const ProjectSection: ForwardRefRenderFunction<
                                                     <Image src={image} alt={image.src}
                                                            width={150}
                                                            height={40}
-                                                        layout="responsive"
+                                                           layout="responsive"
                                                     />
                                                 </div>
                                             </SwiperSlide>
